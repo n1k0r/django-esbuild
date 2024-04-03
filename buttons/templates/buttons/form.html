@@ -1,0 +1,14 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="row">
+    <div class="btn-group-vertical w-25 m-auto">
+        <button class="btn btn-primary" data-function="random-colored">Click me</button>
+        <button class="btn btn-info" data-function="random-sized">and me</button>
+        <a class="btn btn-secondary" href="{% url 'home' %}">Go back</a>
+    </div>
+</div>
+
+<script src="{% static "buttons/bundle.js" %}"></script>
+{% endblock %}

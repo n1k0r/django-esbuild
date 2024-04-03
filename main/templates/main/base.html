@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="{% static "main/style.css" %}">
+<title>{{ title }}</title>
+
+<div class="container bg-light p-4 mt-4">
+{% block content %}
+    {% if header %}
+    <h2 class="mb-4">{{ header }}</h2>
+    {% endif %}
+
+    {{ text|linebreaks }}
+{% endblock %}
+</div>
+
+<script src="{% static "main/script.js" %}"></script>

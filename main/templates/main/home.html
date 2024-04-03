@@ -1,0 +1,7 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block content %}
+{{ block.super }}
+<a class="btn btn-outline-warning" href="{% url 'buttons' %}">Go to buttons page</a>
+{% endblock %}
