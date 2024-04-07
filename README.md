@@ -10,8 +10,8 @@ These applications are being built like this:
 ```mermaid
 flowchart LR
     subgraph src
-        src_buttons_colored[buttons/src/_bundle/colored.ts]
-        src_buttons_sized[buttons/src/_bundle/sized.ts]
+        src_buttons_colored[buttons/src/buttons/_bundle/colored.ts]
+        src_buttons_sized[buttons/src/buttons/_bundle/sized.ts]
         src_buttons_bundle[buttons/src/buttons/bundle.ts]
         src_main_script[main/src/main/script.js]
         src_main_style[main/src/main/style.scss]
